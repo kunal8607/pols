@@ -1,6 +1,12 @@
 Pols::Application.routes.draw do
+  get "people/index"
+
+  get "todolists/index"
+
   get "companies/index"
   get "companies/persist"
+  get "todolists/persist"
+  get "people/persist"
   get "basecamp_projects/persist"
   get "basecamp_projects/index"
 

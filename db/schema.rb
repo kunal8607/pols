@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120106090529) do
+ActiveRecord::Schema.define(:version => 20120106165439) do
 
   create_table "basecamp_projects", :force => true do |t|
     t.integer  "basecampid"
@@ -27,6 +27,26 @@ ActiveRecord::Schema.define(:version => 20120106090529) do
     t.string   "name"
     t.string   "address"
     t.string   "phone"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "people", :force => true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "email_address"
+    t.string   "uuid"
+    t.string   "title"
+    t.string   "phone_number_mobile"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "todolists", :force => true do |t|
+    t.string   "name"
+    t.integer  "completed_count"
+    t.integer  "uncompleted_count"
+    t.integer  "project_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

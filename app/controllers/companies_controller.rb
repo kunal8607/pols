@@ -14,5 +14,5 @@ class CompaniesController < ApplicationController
     end
 
   end
-  Basecamp::P
+  
 end

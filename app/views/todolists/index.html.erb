@@ -1,0 +1,19 @@
+<h1>Todolists</h1>
+<p></p>
+<% @todolist.each do |i| %>
+     Name of the TodoList::::::::::<%= i.name %> <br>
+   Completed Count of TodoList::::::: <%=i.completed_count%> <br>
+   Uncompleted Count of Todolist:::::::: <%= i.uncompleted_count%> <br>
+
+    <br>
+    <br>
+    <br>
+
+<% end %>
+
+    ###########################################################<br>
+Project_id::::::: <%=@pid%><br>
+<br>
+
+
+<%= link_to "save_to_database_todolist", todolists_persist_path %>
