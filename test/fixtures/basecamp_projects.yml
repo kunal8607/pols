@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  basecampid: 1
+  name: MyString
+  status: MyString
+  created_on: 
+  company_id: 1
+
+two:
+  basecampid: 1
+  name: MyString
+  status: MyString
+  created_on: 
+  company_id: 1

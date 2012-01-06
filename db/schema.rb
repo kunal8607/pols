@@ -10,7 +10,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120106084918) do
+ActiveRecord::Schema.define(:version => 20120106090529) do
+
+  create_table "basecamp_projects", :force => true do |t|
+    t.integer  "basecampid"
+    t.string   "name"
+    t.string   "status"
+    t.date     "created_on"
+    t.integer  "company_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "companies", :force => true do |t|
     t.integer  "basecampid"

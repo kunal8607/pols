@@ -1,0 +1,18 @@
+<h1>Companies</h1>
+<p></p>
+<% @companies.each do |i| %>
+     Name::::::::::<%= i.name %> <br>
+   ID::::::: <%=i.id%> <br>
+   phone:::::::: <%= i.phone_number_office %> <br>
+   Address::::::: <%=i.address_one%> <br>
+
+
+    ###########################################################<br>
+    <br>
+    <br>
+    <br>
+
+<% end %>
+<%= link_to "save_to_database", companies_persist_path %>
+
+

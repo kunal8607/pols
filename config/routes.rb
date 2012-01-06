@@ -1,4 +1,7 @@
 Pols::Application.routes.draw do
+  get "companies/index"
+  get "companies/persist"
+  get "basecamp_projects/persist"
   get "basecamp_projects/index"
 
   # The priority is based upon order of creation:
