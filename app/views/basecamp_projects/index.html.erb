@@ -1,0 +1,17 @@
+<h1>List Of all Projects</h1>
+
+
+<% @projects.each do |i| %>
+     Name::::::::::<%= i.name %> <br>
+   ID::::::: <%=i.id%> <br>
+   Company Name:::::::: <%= i.company.name %> <br>
+   Company id::::::: <%=i.company.id%> <br>
+    Status:::::::: <%= i.status %> <br>
+   Created on::::::::  <%= i.created_on %> <br>
+
+    ###########################################################<br>
+    <br>
+    <br>
+    <br>
+
+<% end %>
