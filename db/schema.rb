@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120106165439) do
+ActiveRecord::Schema.define(:version => 20120109110912) do
 
   create_table "basecamp_projects", :force => true do |t|
     t.integer  "basecampid"
@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(:version => 20120106165439) do
     t.string   "phone_number_mobile"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "clientid"
   end
 
   create_table "todolists", :force => true do |t|
@@ -49,6 +50,7 @@ ActiveRecord::Schema.define(:version => 20120106165439) do
     t.integer  "project_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "complete"
   end
 
 end
