@@ -11,7 +11,7 @@ class TodolistsController < ApplicationController
 
 
     @todolist.each do |i|
-     @todo=Todolist.new(:name =>i.name,:completed_count=> i.completed_count, :uncompleted_count=> i.uncompleted_count,:project_id=>@pid)
+     @todo=Todolist.new(:name =>i.name,:completed_count=> i.completed_count, :uncompleted_count=> i.uncompleted_count,:project_id=>@pid, :complete=> i.complete)
       @todo.save
     end
 
