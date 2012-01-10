@@ -4,8 +4,10 @@ class CompaniesController < ApplicationController
     @companies=Basecamp::Company.all
   end
   def persist
+    require 'net/http'
     Basecamp.establish_connection!('webonise.basecamphq.com','kunal.webonise','9930ghijk',true)
     @companies=Basecamp::Company.all
+
     
 
     @companies.each do |i|
