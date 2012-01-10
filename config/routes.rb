@@ -1,4 +1,6 @@
 Pols::Application.routes.draw do
+  get "comments/persist"
+
   get "posts/index"
 
   get "people/index"
