@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120109141218) do
+ActiveRecord::Schema.define(:version => 20120110130529) do
 
   create_table "basecamp_projects", :force => true do |t|
     t.integer  "basecampid"
@@ -18,6 +18,16 @@ ActiveRecord::Schema.define(:version => 20120109141218) do
     t.string   "status"
     t.date     "created_on"
     t.integer  "company_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "comments", :force => true do |t|
+    t.integer  "basecamp_id"
+    t.integer  "author_id"
+    t.text     "body"
+    t.datetime "created_on"
+    t.integer  "post_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -41,6 +51,19 @@ ActiveRecord::Schema.define(:version => 20120109141218) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "clientid"
+  end
+
+  create_table "posts", :force => true do |t|
+    t.integer  "basecamp_id"
+    t.integer  "author_id"
+    t.string   "author_name"
+    t.datetime "posted_on"
+    t.text     "body"
+    t.string   "title"
+    t.integer  "client_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "from_client"
   end
 
   create_table "todolists", :force => true do |t|

@@ -1,4 +1,6 @@
 Pols::Application.routes.draw do
+  get "posts/index"
+
   get "people/index"
 
   get "todolists/index"

@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  basecamp_id: 1
+  author_id: 1
+  author_name: MyString
+  posted_on: 2012-01-10 18:28:36
+  body: MyText
+  title: MyString
+  client_id: 1
+
+two:
+  id: 1
+  basecamp_id: 1
+  author_id: 1
+  author_name: MyString
+  posted_on: 2012-01-10 18:28:36
+  body: MyText
+  title: MyString
+  client_id: 1
